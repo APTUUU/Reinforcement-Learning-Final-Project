@@ -113,7 +113,7 @@ public class MyAgent : Agent
                     Destroy(parent.GetChild(i).gameObject);
                 }
             }
-
+            AddReward(-0.5f); // Add a negative reward for hitting the bear
             EndEpisode(); // End the episode
         }
     }
